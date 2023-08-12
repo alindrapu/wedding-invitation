@@ -60,6 +60,10 @@
   .home .couple img {
     transform: rotateY(180deg);
   }
+
+  .sticky-top {
+    overflow: hidden;
+  }
 }
 
 /* mobile phone */

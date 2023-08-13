@@ -35,7 +35,7 @@
 </head>
 
 
-<body class="unscrollable">
+<body class="">
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
@@ -369,12 +369,55 @@
     </div>
   </section>
 
+  <section id="carousel-foto" class="carousel-foto">
+    <div class="container">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="img/gallery/img-1.jpg" class="d-block w-100 h-75" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/gallery/img-2.jpg" class="d-block w-100 h-75" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/gallery/img-3.jpg" class="d-block w-100 h-75" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/gallery/img-4.jpeg" class="d-block w-100 h-75 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/gallery/img-5.jpeg" class="d-block w-100 h-75" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/gallery/img-6.jpeg" class="d-block w-100 h-75" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/gallery/img-7.jpeg" class="d-block w-100 h-75 img-fluid" alt="...">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+  </section>
+
   <section id="close" class="close">
     <div class="container">
-      <div class="row justify-content-center">
+      <div class="row justify-content-center mt-2">
         <div class="col-md-8 col-10 text-center pb-5">
           <h2>Peti & Syukron</h2>
-          <p>Atas kehadiran dan doarestunya kami ucapkan terima kasih.</p>
+          <p>Atas kehadiran dan doa restunya kami ucapkan terima kasih.</p>
         </div>
       </div>
     </div>

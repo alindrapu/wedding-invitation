@@ -236,6 +236,7 @@ body.unscrollable {
 /* End of Gallery Section */
 
 /* Comment Section */
+.gifts
 /* End of Comment Section */
 
 /* Gifts Section */
@@ -288,13 +289,41 @@ body.unscrollable {
   letter-spacing: 0.1rem;
 }
 
+.carousel-inner {
+  padding-top: 50%;
+  height: 0;
+  padding-bottom: 100%;
+  /* this sets carousel aspect ratio (4:1 here) */
+}
+
+.carousel-item {
+  position: absolute !important;
+  /* Bootstrap is insistent */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+}
+
+.carousel-item img {
+  height: 100%;
+  /* Bootstrap handles width already */
+  object-fit: cover;
+  /* or 'contain' if you want stretch instead of crop */
+}
+
+.close h2 {
+  margin-top: -35%;
+}
 
 /* Footer Section */
-
-/* End of Footer Section */
 #footer {
   color: white;
 }
+
+/* End of Footer Section */
+
 
 
 

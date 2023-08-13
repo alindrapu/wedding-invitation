@@ -15,6 +15,10 @@ body {
   min-height: 4000px;
 }
 
+body.unscrollable {
+  overflow: hidden;
+}
+
 /* Hero Section */
 .hero::before {
   content: "";
@@ -68,6 +72,7 @@ body {
   background-color: var(--pink);
   color: white;
 }
+
 /* End of Hero Section */
 
 /* Navbar */
@@ -98,6 +103,7 @@ body {
   font-size: 2rem;
   text-align: center;
 }
+
 /* End of Navbar */
 
 /* Home Section */
@@ -112,7 +118,9 @@ body {
 
 .home h2,
 .info h2,
-.gallery h2{
+.gallery h2,
+.gifts h2,
+.close h2 {
   color: var(--pink);
   font-family: "Sacramento", cursive;
   font-size: 5rem;
@@ -149,7 +157,7 @@ body {
 
 /* Info Section */
 .info {
-  background-image:url(img/info-bg.jpg);
+  background-image: url(img/info-bg.jpg);
   color: wheat;
   padding-top: 15rem;
   padding-bottom: 15rem;
@@ -174,7 +182,7 @@ body {
   border: 1px solid #999;
 }
 
-.info .card-header{
+.info .card-header {
   border-bottom: 1px solid #999;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
@@ -230,6 +238,69 @@ body {
 /* Comment Section */
 /* End of Comment Section */
 
+/* Gifts Section */
+.gifts {
+  padding-top: 10rem;
+}
+
+.gifts span {
+  text-transform: uppercase;
+  color: #666;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  display: block;
+  margin-top: 1rem;
+}
+
+.gifts .card {
+  background-color: #eecac1;
+  border-radius: 30px;
+  box-shadow: #0a0a0a;
+  box-shadow: 0px 15px 10px -15px #111;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.gifts .card .card-title {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.gifts .card .card-body blockquote {
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.gifts a {
+  color: var(--pink);
+  background-color: white;
+  box-shadow: var(--shadow);
+}
+
+.gifts a:hover {
+  background-color: var(--pink);
+  color: white;
+}
+
+.gifts .card-header {
+  border-bottom: 1px solid #999;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+
+/* Footer Section */
+
+/* End of Footer Section */
+#footer {
+  color: white;
+}
+
+
+
+
+
+/* End of Gifts Section */
 
 
 /* @keyframes fadein {

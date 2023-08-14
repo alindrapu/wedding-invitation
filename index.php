@@ -28,14 +28,14 @@
     function enableScroll() {
       document.body.classList.remove('unscrollable');
 
-      var audio = new Audio('/sound/sound.mp3');
+      var audio = new Audio('/sound/sound2.mp3');
       audio.play();
     }
   </script>
 </head>
 
 
-<body class="">
+<body class="unscrollable">
   <section id="hero"
     class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
     <main>
@@ -58,7 +58,7 @@
 
   <nav class="navbar navbar-expand-md sticky-top mynavbar">
     <div class="container">
-      <a class="navbar-brand" href="#">Peti & Syukron</a>
+      <a class="navbar-brand" href="#" style="font-weight: 400;">Peti & Syukron</a>
     </div>
   </nav>
 
@@ -178,7 +178,8 @@
         </div>
         <div class="col mt-3">
           <a href="img/gallery/img-2.jpg" data-toggle="lightbox" data-gallery="p&s">
-            <img src="img/gallery/thumbnail/img-2.jpg" alt="foto 2" class="img-fluid w-100 rounded">
+            <img id="foto2" src="img/gallery/thumbnail/img-2.jpg" alt="foto 2"
+              class="img-fluid w-100 rounded align-content-end">
           </a>
         </div>
         <!-- <div class="col mt-3">
@@ -218,98 +219,6 @@
         <div class="col-md-8 col-10 text-center">
           <span>DOA RESTU SERTA</span>
           <h2>Hadiah Pernikahan</h2>
-
-          <!-- <div class="row d-flex justify-content-center">
-            <div class="col-md-8 col-lg-6">
-              <div class="card shadow-0 border" style="background-color: #f0f2f5;">
-                <div class="comment card-body p-4">
-                  <div class="form-outline mb-4">
-                    <input type="text" id="addAName" class="form-control mb-2" placeholder="Nama" />
-                    <input type="text" id="addANote" class="form-control" placeholder="Doa & Ucapan Selamat" />
-                    <button id="submitComment" type="button" class="mt-2">Kirim Ucapan</button>
-                  </div>
-
-                  <div class="comment card mb-4">
-                    <div class="card-body">
-                      <p>Type your note, and hit enter to add it</p>
-
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex flex-row align-items-center">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="25"
-                            height="25" />
-                          <p class="small mb-0 ms-2">Martha</p>
-                        </div>
-                        <div class="d-flex flex-row align-items-center">
-                          <p class="small text-muted mb-0">Upvote?</p>
-                          <i class="far fa-thumbs-up mx-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
-                          <p class="small text-muted mb-0">3</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <p>Type your note, and hit enter to add it</p>
-
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex flex-row align-items-center">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" width="25"
-                            height="25" />
-                          <p class="small mb-0 ms-2">Johny</p>
-                        </div>
-                        <div class="d-flex flex-row align-items-center">
-                          <p class="small text-muted mb-0">Upvote?</p>
-                          <i class="far fa-thumbs-up mx-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
-                          <p class="small text-muted mb-0">4</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card mb-4">
-                    <div class="card-body">
-                      <p>Type your note, and hit enter to add it</p>
-
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex flex-row align-items-center">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(31).webp" alt="avatar" width="25"
-                            height="25" />
-                          <p class="small mb-0 ms-2">Mary Kate</p>
-                        </div>
-                        <div class="d-flex flex-row align-items-center text-primary">
-                          <p class="small mb-0">Upvoted</p>
-                          <i class="fas fa-thumbs-up mx-2 fa-xs" style="margin-top: -0.16rem;"></i>
-                          <p class="small mb-0">2</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card">
-                    <div class="card-body">
-                      <p>Type your note, and hit enter to add it</p>
-
-                      <div class="d-flex justify-content-between">
-                        <div class="d-flex flex-row align-items-center">
-                          <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" width="25"
-                            height="25" />
-                          <p class="small mb-0 ms-2">Johny</p>
-                        </div>
-                        <div class="d-flex flex-row align-items-center">
-                          <p class="small text-muted mb-0">Upvote?</p>
-                          <i class="far fa-thumbs-up ms-2 fa-xs text-black" style="margin-top: -0.16rem;"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-
-
-
           <div class="card">
             <div class="card-body">
               <blockquote class="blockquote mb-1">
@@ -328,16 +237,14 @@
         <div class="row justify-content-center mt-2">
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light mb-5">
-              <div class="card-header">
-                rekening
-              </div>
-              <div class="card-body">
+
+              <div id="rekening-card" class="card-body rekening">
                 <div class="row justify-content-center">
                   <div class="col-md-12">
                     <i class="bi bi-bank d-block"></i>
-                    <h3 class="mt-5 mb-5">Bank Central Asia (BCA) <br> A.N Syukron Al Azhar <br>6790284150 </h3>
+                    <h3 class="mt-3 mb-7">Bank Central Asia (BCA) <br> A.N Syukron Al Azhar <br>6790284150 </h3>
                     <a href="#gifts" onclick="copyToClipboard('6790284150')"
-                      class="btn btn-lg mt-0 mb-2 bg-light-subtle">Salin No. Rekening</a>
+                      class="btn btn-lg mt-0 mb-2 bg-light-subtle pb-2">Salin No. Rekening</a>
                   </div>
                 </div>
               </div>
@@ -347,16 +254,14 @@
         <div class="row justify-content-center mt-4">
           <div class="col-md-5 col-10">
             <div class="card text-center text-bg-light ">
-              <div class="card-header">
-                rekening
-              </div>
-              <div class="card-body">
+
+              <div id="rekening-card" class="card-body">
                 <div class="row justify-content-center">
                   <div class="col-md-10">
                     <i class="bi bi-bank d-block"></i>
-                    <h3 class="mt-5 mb-5">Bank Central Asia (BCA) <br> A.N Peti Ningsih <br>8880447107 </h3>
+                    <h3 class="mt-3 mb-7">Bank Central Asia (BCA) <br> A.N Peti Ningsih <br>8880447107 </h3>
                     <a href="#gifts" onclick="copyToClipboard('8880447107')"
-                      class="btn btn-lg mt-0 mb-2 bg-light-subtle">Salin No. Rekening</a>
+                      class="btn btn-lg mt-0 mb-2 bg-light-subtle pb-2">Salin No. Rekening</a>
                   </div>
                 </div>
               </div>
@@ -364,12 +269,10 @@
           </div>
         </div>
       </div>
-
-
     </div>
   </section>
 
-  <section id="carousel-foto" class="carousel-foto">
+  <!-- <section id="carousel-foto" class="carousel-foto">
     <div class="container">
       <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -382,17 +285,15 @@
           <div class="carousel-item" data-bs-interval="2000">
             <img src="img/gallery/img-3.jpg" class="d-block w-100 h-75" alt="...">
           </div>
-          <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/gallery/img-4.jpeg" class="d-block w-100 h-75 img-fluid" alt="...">
-          </div>
+
           <div class="carousel-item" data-bs-interval="2000">
             <img src="img/gallery/img-5.jpeg" class="d-block w-100 h-75" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/gallery/img-6.jpeg" class="d-block w-100 h-75" alt="...">
+            <img src="img/gallery/img-6.jpg" class="d-block w-100 h-75" alt="...">
           </div>
           <div class="carousel-item" data-bs-interval="2000">
-            <img src="img/gallery/img-7.jpeg" class="d-block w-100 h-75 img-fluid" alt="...">
+            <img src="img/gallery/img-7.jpg" class="d-block w-100 h-75 img-fluid" alt="...">
           </div>
         </div>
 
@@ -410,18 +311,25 @@
       </div>
     </div>
 
-  </section>
+  </section> -->
 
   <section id="close" class="close">
     <div class="container">
       <div class="row justify-content-center mt-2">
         <div class="col-md-8 col-10 text-center pb-5">
-          <h2>Peti & Syukron</h2>
+          <h2 style="font-weight: 300;">Peti & Syukron</h2>
           <p>Atas kehadiran dan doa restunya kami ucapkan terima kasih.</p>
         </div>
       </div>
     </div>
   </section>
+
+
+  <!-- <section id="closing-line">
+    <div class="container d-inline-block">
+      <div class="row justify-content-center"></div>
+    </div>
+  </section> -->
 
 
   <footer id="footer" class="bg-dark pt-5 justify-content-center">
@@ -438,11 +346,6 @@
       </div>
     </div>
   </footer>
-
-
-
-
-
 
   <!-- Boostrap Script -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
@@ -482,34 +385,6 @@
   </script>
   <!-- End of Simply Countdown Script -->
 
-  <!-- Firebase Script -->
-  <script type="module">
-    // Import the functions you need from the SDKs you need
-    import {
-      initializeApp
-    } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-app.js";
-    import {
-      getFirestore, getDoc, Doc
-    } from "https://www.gstatic.com/firebasejs/10.1.0/firebase-firestore-compat.js";
-    // TODO: Add SDKs for Firebase products that you want to use
-    // https://firebase.google.com/docs/web/setup#available-libraries
-
-    // Your web app's Firebase configuration
-    const firebaseConfig = {
-      apiKey: "AIzaSyASfsALa8-QzXeEy88K1LtWVijX6yEi08Q",
-      authDomain: "apwedding-2dacd.firebaseapp.com",
-      projectId: "apwedding-2dacd",
-      storageBucket: "apwedding-2dacd.appspot.com",
-      messagingSenderId: "884250848916",
-      appId: "1:884250848916:web:d50335c2244ed12191ce81"
-    };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    const db = getFirestoreDatabase(app);
-  </script>
-  <!-- End of Firebase Script -->
-
   <script>
     function copyToClipboard(text) {
       var dummyInput = document.createElement('textarea');
@@ -522,21 +397,6 @@
     }
   </script>
 
-  <!-- <script>
-    function disableScroll() {
-      scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-      scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-
-      window.onscroll = function () {
-        window.scrollTo(scrollLeft, scrollTop);
-      }
-    }
-
-    function enableScroll() {
-      window.onScroll = function () { };
-    }
-
-  </script> -->
 </body>
 
 </html>

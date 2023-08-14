@@ -2,7 +2,7 @@
 
 
 :root {
-  --pink: #f14e95;
+  --pink: #ff8551;
   --blue: #86c6eb;
   --bg: #0a0a0a;
   --choco: #d0a096;
@@ -124,7 +124,7 @@ body.unscrollable {
   color: var(--pink);
   font-family: "Sacramento", cursive;
   font-size: 5rem;
-  font-weight: bold;
+  font-weight: 400;
 }
 
 .home h3 {
@@ -214,8 +214,9 @@ body.unscrollable {
 
 /* Gallery Section */
 .gallery {
-  background-color: #f5f5f5;
-  padding-top: 10rem;
+  background-color: #faf0e4;
+  padding-top: 7rem;
+  padding-bottom: 5rem;
 }
 
 .gallery p {
@@ -232,16 +233,20 @@ body.unscrollable {
   margin-top: 1rem;
 }
 
+.gallery #foto2 {
+  transform: translateY(125%);
+}
+
 
 /* End of Gallery Section */
 
 /* Comment Section */
-.gifts
 /* End of Comment Section */
 
 /* Gifts Section */
 .gifts {
   padding-top: 10rem;
+  background-color: #ffdede !important;
 }
 
 .gifts span {
@@ -254,7 +259,7 @@ body.unscrollable {
 }
 
 .gifts .card {
-  background-color: #eecac1;
+  background-color: #9bcdd2;
   border-radius: 30px;
   box-shadow: #0a0a0a;
   box-shadow: 0px 15px 10px -15px #111;
@@ -279,43 +284,21 @@ body.unscrollable {
 }
 
 .gifts a:hover {
-  background-color: var(--pink);
+  background-color: var(--pink) !important;
   color: white;
 }
 
-.gifts .card-header {
-  border-bottom: 1px solid #999;
+
+
+#rekening-card {
+  background-color: #faf0e4 !important;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
+  border-radius: 30px;
+  box-shadow: #0a0a0a;
+  box-shadow: 0px 15px 10px -15px #111;
 }
 
-.carousel-inner {
-  padding-top: 50%;
-  height: 0;
-  padding-bottom: 100%;
-  /* this sets carousel aspect ratio (4:1 here) */
-}
-
-.carousel-item {
-  position: absolute !important;
-  /* Bootstrap is insistent */
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-}
-
-.carousel-item img {
-  height: 100%;
-  /* Bootstrap handles width already */
-  object-fit: cover;
-  /* or 'contain' if you want stretch instead of crop */
-}
-
-.close h2 {
-  margin-top: -35%;
-}
 
 /* Footer Section */
 #footer {
@@ -325,7 +308,14 @@ body.unscrollable {
 /* End of Footer Section */
 
 
+/* #closing-line h4 {
+  background-color: #86c6eb;
+  color: #86c6eb;
+} */
 
+#close {
+  padding-top: 5rem;
+}
 
 
 

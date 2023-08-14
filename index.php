@@ -32,6 +32,26 @@
       audio.play();
     }
   </script>
+
+  <script type="text/javascript">
+    function reveal() {
+      var reveals = document.querySelectorAll(".reveal");
+
+      for (var i = 0; i < reveals.length; i++) {
+        var windowHeight = window.innerHeight;
+        var elementTop = reveals[i].getBoundingClientRect().top;
+        var elementVisible = 150;
+
+        if (elementTop < windowHeight - elementVisible) {
+          reveals[i].classList.add("active");
+        } else {
+          reveals[i].classList.remove("active");
+        }
+      }
+    }
+
+    window.addEventListener("scroll", reveal);
+  </script>
 </head>
 
 
@@ -63,7 +83,7 @@
   </nav>
 
   <section id="home" class="home">
-    <div class="container">
+    <div class="container reveal">
       <div class="row justify-content-center">
         <div class="col-md-8 text-center">
           <h2 class="typewrite" data-period="1000" data-type='["Pernikahan"]'></h2>
@@ -72,7 +92,7 @@
         </div>
       </div>
       <div class="row couple mt-5">
-        <div class="col-lg-6">
+        <div class="col-lg-6  reveal fade-right">
           <div class="row">
             <div class="col-8 text-end">
               <p><br></p>
@@ -84,7 +104,7 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-6">
+        <div class="col-lg-6 reveal fade-left">
           <div class="row">
             <div class="col-4">
               <img src="img/ucon.png" alt="Syukron Al Azhar" class="img-responsive rounded-circle">
@@ -101,7 +121,7 @@
   </section>
 
   <section id="info" class="info">
-    <div class="container">
+    <div class="container reveal">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
           <h2 class="typewrite" data-period="1000" data-type='["Informasi Acara"]'></h2>
@@ -162,7 +182,7 @@
   </section>
 
   <section id="gallery" class="gallery">
-    <div class="container">
+    <div class="container reveal">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
           <span>Memori Kami</span>
@@ -171,12 +191,12 @@
       </div>
 
       <div class="row row-cols-md-4 row-cols-sm-3 row-cols-2">
-        <div class="col mt-3">
+        <div class="col mt-3 reveal fade-right">
           <a href="img/gallery/img-1.jpg" data-toggle="lightbox" data-gallery="p&s">
             <img src="img/gallery/thumbnail/img-1.jpg" alt="foto 1" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3 reveal fade-bottom">
           <a href="img/gallery/img-2.jpg" data-toggle="lightbox" data-gallery="p&s">
             <img id="foto2" src="img/gallery/thumbnail/img-2.jpg" alt="foto 2"
               class="img-fluid w-100 rounded align-content-end">
@@ -187,22 +207,22 @@
             <img src="img/gallery/thumbnail/img-4.jpg" alt="foto" class="img-fluid w-100 rounded">
           </a>
         </div> -->
-        <div class="col mt-3">
+        <div class="col mt-3 reveal fade-left">
           <a href="img/gallery/img-3.jpg" data-toggle="lightbox" data-gallery="p&s">
             <img src="img/gallery/thumbnail/img-3.jpg" alt="foto 3" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3 reveal fade-bottom">
           <a href="img/gallery/img-5.jpeg" data-toggle="lightbox" data-gallery="p&s">
             <img src="img/gallery/thumbnail/img-5.jpg" alt="foto 4" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3 reveal fade-right">
           <a href="img/gallery/img-6.jpeg" data-toggle="lightbox" data-gallery="p&s">
             <img src="img/gallery/thumbnail/img-6.jpg" alt="foto 5" class="img-fluid w-100 rounded">
           </a>
         </div>
-        <div class="col mt-3">
+        <div class="col mt-3 reveal fade-left">
           <a href="img/gallery/img-7.jpeg" data-toggle="lightbox" data-gallery="p&s">
             <img src="img/gallery/thumbnail/img-7.jpg" alt="foto 6" class="img-fluid w-100 rounded">
           </a>
@@ -214,7 +234,7 @@
   </section>
 
   <section id="gifts" class="gifts">
-    <div class="container">
+    <div class="container reveal">
       <div class="row justify-content-center">
         <div class="col-md-8 col-10 text-center">
           <span>DOA RESTU SERTA</span>
@@ -322,6 +342,7 @@
         </div>
       </div>
     </div>
+    </div>
   </section>
 
 
@@ -396,6 +417,7 @@
       alert("No. Rekening berhasil disalin: " + text);
     }
   </script>
+
 
 </body>
 
